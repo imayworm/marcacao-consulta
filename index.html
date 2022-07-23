@@ -7,56 +7,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
 </head>
+
 <body>
     <header>
-        <img class="logo" src="Google-Logo1.png" alt="logo-mis" usemap="#button-home">
+        
+        <img class="logo" src="mis-logo-p.png" alt="logo-mis" usemap="#button-home">
         <map name="button-home">
             <area href="index.html" alt="logo-mis">
         </map>
-        <nav>
+        <!--<nav>
             <ul>
                 <li><a href="index.html" target="_self">Página Inicial</a></li>
                 <li><a href="about.html" target="_self">Sobre</a></li>
                 <li><a href="contato.html" target="_self">Contato</a></li>
             </ul>
         </nav>
+    -->
     </header>
     <main>
-        <div ></div>
-        <form method="post" id="marcacao" action="marcacao.php">
-            <p><label for="cName">Nome Completo</label>
-                <input type="text" name="tName" id="cName" size="40" max="30" maxlength="40" placeholder="Digite seu nome completo..."></p>
-            <p><label for="cEmail">E-mail</label>
-                <input type="email" name="tEmail" id="cEmail" size="40" max="30" maxlength="40" placeholder="exemplo@com.br"></p>
-            <p><label for="cProcedimento">Procedimento</label>
-                <select name="tProcedimento" id="cProcedimento">
-                <option>Procedimento1</option>
-                <option>Procedimento2</option>
-                <option>Procedimento3</option>
-                <option>Procedimento4</option>
-                <option>Procedimento5</option>
-                </select></p>
-            <p><label for="cDate">Data</label><input type="date" name="tDate" id="cDate" ></p>
-            <p><label for="cHorario">Horário</label>
-                <select name="tHorario" id="cHorario">
-                    <option>08:00 às 10:00</option>
-                    <option>10:00 às 12:00</option>
-                    <option>12:00 às 14:00</option>
-                    <option>14:00 às 16:00</option>
-                    <option>16:00 às 18:00</option>
-                </select></p>
-            <p><label for="cMensagem">Mensagem</label>
-                <textarea name="tMensagem" id="cMensagem" rows="5" cols="30" placeholder="Digite sua mensagem aqui..."></textarea></p>
+        <div class="foto" >
+            <img src="" alt="" srcset="">
+        </div>
+        
+        <div class="form-marcacao">
+            <form method="post" id="marcacao" action="marcacao.php">
+                <p><label for="cName">Nome </label>
+                    <input type="text" name="tName" id="cName" size="30" max="30" maxlength="40" placeholder="Digite seu nome completo..."></p>
+                <p><label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" size="26" max="30" maxlength="40" placeholder="(21) 00000-0000"></p>
+                <p><label for="cEmail">E-mail</label>
+                    <input type="email" name="tEmail" id="cEmail" size="29" max="30" maxlength="40" placeholder="exemplo@com.br"></p>
+                <p><label for="cProcedimento">Procedimento</label>
+                    <select name="tProcedimento" id="cProcedimento">
+                    <option>Procedimento1</option>
+                    <option>Procedimento2</option>
+                    <option>Procedimento3</option>
+                    <option>Procedimento4</option>
+                    <option>Procedimento5</option>
+                    </select></p>
+                <p><label for="cDate">Data </label><input type="date" name="tDate" id="cDate" ></p>
+                <p><label for="cHorario">Horário</label>
+                    <select name="tHorario" id="cHorario">
+                        <option>08:00 às 10:00</option>
+                        <option>10:00 às 12:00</option>
+                        <option>12:00 às 14:00</option>
+                        <option>14:00 às 16:00</option>
+                        <option>16:00 às 18:00</option>
+                    </select></p>
+                <p><label for="cMensagem"></label>
+                    <textarea name="tMensagem" id="cMensagem" rows="5" cols="37" placeholder="Digite sua mensagem aqui..."></textarea></p>
+                <button name="botao" form="marcacao" class="botao-form">Enviar</button>    
 
+            </form>
+        </div>
+        
 
-        </form>
-        <button name="botao" form="marcacao" class="botao">Enviar</button>
-        <div class="depoimento" ></div>
-        <div class="depoimento" ></div>
-        <div class="depoimento" ></div>
+        <div class="contato">
+            <p><a href="https://wa.me/5521981863128"><img src="whatsapp-ico.png" alt="wap" srcset=""></a></p>
+            <p><a href="https://www.instagram.com/misguedess.estetica"><img src="instagram-ico.png" alt="inst" srcset=""></a></p>
+            <p><a href="#"><img src="" alt="" srcset=""></a></p>
+                
+        </div>
     </main>
+    
+    <div class="footer-sub">
+        <p>CNPJ: 0000000/000-00</p>
+        <p>Graduação na Unisuam em Estética</p>
+        <p>Atendimento em domicílio</p>
+        <p>De seg à sex - 08h às 18h</p>
+    </div>
     <footer>
-
+        <p>Site criado por <a href="https://github.com/imayworm" rel="link" target="_blank">Izabela Mayworm</a></p>
     </footer>
 </body>
 </html>

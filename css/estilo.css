@@ -1,29 +1,111 @@
 @charset "utf-8";
-body, ul, li {
+:root {
+    --fundo: #F2F2F2;
+    --cor1: #DBD8F2;
+    --cor2: #BEB6F2;
+    --cor3: #917CA6;
+    --fonte: #400C29;
+
+}
+/*
+#F2F2F2
+#DBD8F2
+#BEB6F2
+#917CA6
+#400C29
+*/
+
+body {
+    display: block;
+    width: 100vw;
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 20px;
-    font-family: Arial sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: rgb(255, 255, 255);
 }
 
 header {
-    display: flex;
-    background-color: aqua;
+    
+    background-color: var(--cor3);
+    
 
 }
-form, .botao, .depoimento {
+
+header > .logo {
     margin: 10px;
 }
-.logo {
+/*
+header > ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
     display: inline-flex;
+    
+}*/
+.foto {
+    width: 100vw;
+    height: 300px;
+    display: inline-block;
+    background-color: white;
+    margin: 0;
 }
-li {
+.form-marcacao {
+    width: 90vw;
+    background-color: var(--cor2);
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+    color: black;
+
+}
+form {
+    padding: 10px 70px;
+}
+.botao-form {
+    
+}
+.contato {
+    margin: 20px 10px;
+    border-top: solid 1px  gray;
+    border-bottom:  solid 1px  gray;
+    text-decoration: none;
+}
+.contato > p {
     display: inline-flex;
+    margin: 20px 40px;
+    
+}
+.footer-sub {
+    color: #400C29;
+    margin: 10px;
+    text-align: center;
+}
+footer {
+    color: #400C29;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-top: solid 1px gray;
+    
+}
+a {
+    text-decoration: none;
+}
 
 
-}
-.depoimento {
-    display: block;
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));
-}
+
+
+
+
+
+
+
+
+
+
+
+
