@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Área do cliente</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+</head>
+<body>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    <img class="icone" src="mis-logo-ico.png" alt="mis-logo" usemap="#button-home">
+    <map name="button-home">
+        <area shape="circle" coords="0,129,127,1" alt="logo-mis" href="index.html">
+    </map>
+
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="index.html">INICIAL</a>
+        <a href="cliente.html">AREA DO CLIENTE</a>
+        <a href="sobre.html">CONTATO</a>
+
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+
+<div class="contato">
+    <p><a href="https://wa.me/5521966413922"><img src="whatsapp-ico.png" alt="wap" srcset=""></a></p>
+    <p><a href="https://www.instagram.com/misguedess.estetica"><img src="instagram-ico.png" alt="inst" srcset=""></a></p>
+    <p><a href="https://www.facebook.com/misguedess.estetica/"><img src="fb-ico2.png" alt="fb-ico" srcset=""></a></p>
+
+</div>
+</main>
+
+<div class="footer-sub">
+    <p>CNPJ: 0000000/000-00</p>
+    <p>Graduação na Unisuam em Estética</p>
+    <p>Atendimento em domicílio</p>
+    <p>De seg à sex - 08h às 18h</p>
+</div>
+<footer>
+    <p>Site criado por <a href="https://github.com/imayworm" rel="link" target="_blank">Izabela Mayworm</a></p>
+</footer>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

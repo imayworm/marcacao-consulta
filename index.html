@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <title>Mislene Estética</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
 </head>
 
 <body>
-    <header>
-        
-        <img class="logo" src="mis-logo-p.png" alt="logo-mis" usemap="#button-home">
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <img class="icone" src="mis-logo-ico.png" alt="mis-logo" usemap="#button-home">
         <map name="button-home">
-            <area href="index.html" alt="logo-mis">
+            <area shape="circle" coords="0,129,127,1" alt="logo-mis" href="index.html">
         </map>
-        <!--<nav>
-            <ul>
-                <li><a href="index.html" target="_self">Página Inicial</a></li>
-                <li><a href="about.html" target="_self">Sobre</a></li>
-                <li><a href="contato.html" target="_self">Contato</a></li>
-            </ul>
-        </nav>
-    -->
-    </header>
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="index.html">INICIAL</a>
+            <a href="cliente.html">AREA DO CLIENTE</a>
+            <a href="sobre.html">CONTATO</a>
+
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
     <main>
         <div class="foto" >
             <img src="" alt="" srcset="">
@@ -63,9 +69,9 @@
         
 
         <div class="contato">
-            <p><a href="https://wa.me/5521981863128"><img src="whatsapp-ico.png" alt="wap" srcset=""></a></p>
+            <p><a href="https://wa.me/5521966413922"><img src="whatsapp-ico.png" alt="wap" srcset=""></a></p>
             <p><a href="https://www.instagram.com/misguedess.estetica"><img src="instagram-ico.png" alt="inst" srcset=""></a></p>
-            <p><a href="#"><img src="" alt="" srcset=""></a></p>
+            <p><a href="https://www.facebook.com/misguedess.estetica/"><img src="fb-ico2.png" alt="fb-ico" srcset=""></a></p>
                 
         </div>
     </main>
@@ -79,5 +85,15 @@
     <footer>
         <p>Site criado por <a href="https://github.com/imayworm" rel="link" target="_blank">Izabela Mayworm</a></p>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

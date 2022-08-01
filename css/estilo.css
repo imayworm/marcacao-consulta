@@ -27,25 +27,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-header {
-    
-    background-color: var(--cor3);
-    
-
-}
-
-header > .logo {
-    margin: 10px;
-}
-/*
-header > ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 20px;
-    display: inline-flex;
-    
-}*/
 .foto {
     width: 100vw;
     height: 300px;
@@ -94,6 +75,52 @@ footer {
 }
 a {
     text-decoration: none;
+}
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: var(--cor3);
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+    background-color: var(--cor2);
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: var(--fonte);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: var(--cor2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: var(--cor1);
+    color: white;
+}
+
+img {
+    padding: 5px;
 }
 
 
