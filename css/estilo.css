@@ -35,31 +35,46 @@ body {
     margin: 0;
 }
 .form-marcacao {
-    width: 90vw;
+    width: 400px;
     background-color: var(--cor2);
     margin: 10px auto;
-    padding: 10px;
     text-align: left;
     color: black;
 
 }
-form {
-    padding: 10px 70px;
+div > form {
+    padding: 10px 50px;
 }
 .botao-form {
     
 }
-.contato {
-    margin: 20px 10px;
-    border-top: solid 1px  gray;
-    border-bottom:  solid 1px  gray;
-    text-decoration: none;
+
+/*contato*/
+
+
+section.contato {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 10px;
 }
-.contato > p {
+section.contato img {
     display: inline-flex;
-    margin: 20px 40px;
-    
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box; /*faz a borda ser parte da img*/
 }
+/*config dos botoes*/
+section.contato img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: transform 0.2s, border 0.3s;
+}
+
+
 .footer-sub {
     color: #400C29;
     margin: 10px;
@@ -76,6 +91,9 @@ footer {
 a {
     text-decoration: none;
 }
+
+
+
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
